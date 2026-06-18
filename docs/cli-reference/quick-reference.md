@@ -66,6 +66,7 @@ datamodel-codegen [OPTIONS]
 
 | Option | Description |
 |--------|-------------|
+| [`--alias-generator`](field-customization.md#alias-generator) | Use a Pydantic v2 alias generator in model_config. |
 | [`--aliases`](field-customization.md#aliases) | Apply custom field and class name aliases from JSON file. |
 | [`--capitalize-enum-members`](field-customization.md#capitalize-enum-members) | Capitalize enum member names to UPPER_CASE format. |
 | [`--default-values`](field-customization.md#default-values) | Override field default values from external JSON file. |
@@ -229,6 +230,7 @@ datamodel-codegen [OPTIONS]
 All options sorted alphabetically:
 
 - [`--additional-imports`](template-customization.md#additional-imports) - Add custom imports to generated output files.
+- [`--alias-generator`](field-customization.md#alias-generator) - Use a Pydantic v2 alias generator in model_config.
 - [`--aliases`](field-customization.md#aliases) - Apply custom field and class name aliases from JSON file.
 - [`--all-exports-collision-strategy`](general-options.md#all-exports-collision-strategy) - Handle name collisions when exporting recursive module hiera...
 - [`--all-exports-scope`](general-options.md#all-exports-scope) - Generate __all__ exports for child modules in __init__.py fi...

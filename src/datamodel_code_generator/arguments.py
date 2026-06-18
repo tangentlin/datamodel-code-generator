@@ -16,6 +16,7 @@ from typing import TYPE_CHECKING, cast
 from datamodel_code_generator.deprecations import deprecation_message
 from datamodel_code_generator.enums import (
     DEFAULT_SHARED_MODULE_NAME,
+    AliasGenerator,
     AllExportsCollisionStrategy,
     AllExportsScope,
     AllOfClassHierarchy,
@@ -903,6 +904,13 @@ field_options.add_argument(
     "--union-mode",
     help="Union mode for only pydantic v2 field",
     choices=[u.value for u in UnionMode],
+    default=None,
+)
+field_options.add_argument(
+    "--alias-generator",
+    help="Pydantic v2 BaseModel alias generator to use in ConfigDict. "
+    "Matching generated aliases are omitted from individual Field() calls.",
+    choices=[a.value for a in AliasGenerator],
     default=None,
 )
 field_options.add_argument(

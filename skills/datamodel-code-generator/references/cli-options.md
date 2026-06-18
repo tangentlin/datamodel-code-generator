@@ -85,6 +85,7 @@ Field naming, aliases, defaults, and constraints.
 - `--use-attribute-docstrings`: Set use_attribute_docstrings=True in Pydantic v2 ConfigDict
 - `--use-inline-field-description`: Use schema description to populate field docstring as inline docstring
 - `--use-single-line-docstring`: Use single-line docstrings when the content fits on one line
+- `--alias-generator`: Pydantic v2 BaseModel alias generator to use in ConfigDict. Matching generated aliases are omitted from individual Field() calls. Choices: `to_camel`, `to_pascal`, `to_snake`.
 - `--no-alias`: Do not add a field alias. E.g., if --snake-case-field is used along with a base class, which has an alias_generator
 - `--use-serialization-alias`: Use serialization_alias instead of alias for field aliasing (Pydantic v2 only). This allows setting values using the Pythonic field name while serializing to the original name.
 - `--serialization-aliases`: Serialization alias mapping file (JSON) for Pydantic v2. Format: {'<schema_field>': '<serialization_alias>'}. Supports hierarchical formats: Flat: {'name': 'fullName'} applies to all occurrences. Scoped: {'User.name': 'fullName'} applies to specific class.

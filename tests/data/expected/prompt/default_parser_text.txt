@@ -54,6 +54,7 @@
 - `--use-unique-items-as-set`: Generate set types for arrays with uniqueItems constraint.
 
 ### Field Customization
+- `--alias-generator`: Use a Pydantic v2 alias generator in model_config.
 - `--aliases`: Apply custom field and class name aliases from JSON file.
 - `--capitalize-enum-members`: Capitalize enum member names to UPPER_CASE format.
 - `--default-values`: Override field default values from external JSON file.

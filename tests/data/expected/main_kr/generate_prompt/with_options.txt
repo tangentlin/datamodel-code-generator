@@ -60,6 +60,7 @@ What other options should I use?
 - `--use-unique-items-as-set`: Generate set types for arrays with uniqueItems constraint.
 
 ### Field Customization
+- `--alias-generator`: Use a Pydantic v2 alias generator in model_config.
 - `--aliases`: Apply custom field and class name aliases from JSON file.
 - `--capitalize-enum-members`: Capitalize enum member names to UPPER_CASE format.
 - `--default-values`: Override field default values from external JSON file.
@@ -403,6 +404,10 @@ For detailed usage, see: https://datamodel-code-generator.koxudaxi.dev
                         has `uniqueItems`
 
 [36;1mField customization[0m:
+  --alias-generator {to_camel,to_pascal,to_snake}
+                        Pydantic v2 BaseModel alias generator to use in
+                        ConfigDict. Matching generated aliases are omitted
+                        from individual Field() calls.
   --capitalise-enum-members, --capitalize-enum-members
                         Capitalize field names on enum
   --empty-enum-field-name EMPTY_ENUM_FIELD_NAME

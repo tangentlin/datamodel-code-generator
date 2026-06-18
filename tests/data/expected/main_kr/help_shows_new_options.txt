@@ -211,6 +211,10 @@ For detailed usage, see: https://datamodel-code-generator.koxudaxi.dev
                         has `uniqueItems`
 
 [36;1mField customization[0m:
+  --alias-generator {to_camel,to_pascal,to_snake}
+                        Pydantic v2 BaseModel alias generator to use in
+                        ConfigDict. Matching generated aliases are omitted
+                        from individual Field() calls.
   --capitalise-enum-members, --capitalize-enum-members
                         Capitalize field names on enum
   --empty-enum-field-name EMPTY_ENUM_FIELD_NAME
